@@ -1,0 +1,116 @@
+.builder-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.builder-error {
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.builder-error h3 {
+  color: #c33;
+  margin-bottom: 1rem;
+}
+
+.builder-error p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.builder-placeholder {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.builder-placeholder h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.builder-placeholder p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.builder-setup {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.builder-setup h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.builder-setup ol {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.builder-setup li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.builder-setup a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.builder-setup a:hover {
+  text-decoration: underline;
+}
+
+.builder-content {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .builder-placeholder {
+    padding: 2rem 1rem;
+  }
+  
+  .builder-placeholder h3 {
+    font-size: 1.5rem;
+  }
+  
+  .builder-setup {
+    padding: 1.5rem;
+  }
+}
